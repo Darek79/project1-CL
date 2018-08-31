@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,14 +6,16 @@
 
 html {
     font-family: 'Raleway', sans-serif;
+    font-size: 12px;
 }
+
 nav {
     height: 50px;
-    background-color: #1a0000;  
-    
+    background-color: #1a0000;
     display: flex;
     justify-content: center;
 }
+
 ul {
     list-style: none;
     color: #f2f2f2;
@@ -21,40 +23,41 @@ ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
 }
-ul li:nth-child(1){
+
+ul li:nth-child(1) {
     padding: 0 5px;
     color: #f2f2f2;
-
     justify-self: flex-start;
     margin-right: auto;
 }
-ul li:nth-child(1n+2){
+
+ul li:nth-child(1n+2) {
     padding-right: 50px;
 }
+
 .center {
     height: 100%;
-    width: 80%; 
+    width: 80%;
 }
+
 main {
     width: 100%;
-    height:600px;
+    height: 600px;
     border: 1px solid red;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(154,154,154,1) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(205, 196, 196, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main>img{
+
+#img1 {
     border: 1px solid red;
-    width:470 pixels;
-    height:337 pixels;
-   
 }
-#mainSec{
+
+#mainSec {
     border: 1px solid red;
-    width:470px;
+    width: 470px;
     height: 337px;
     text-align: center;
     display: flex;
@@ -62,6 +65,25 @@ main>img{
     align-items: center;
     justify-content: center;
 }
-#mainSec>article{
-    /* padding:0 5px 30px 5px ; */
+
+#mainSec article:nth-child(1) {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border: 1px solid red;
+}
+
+#mainSec article:nth-child(2) {
+    text-align: center;
+    padding: 0 10px;
+    opacity: 0.8;
+    margin: 25px 0;
+    border: 1px solid red;
+}
+
+#mainSec button {
+    border: 1px solid red;
+    margin-bottom: 70px;
+    background-color: green;
 }
