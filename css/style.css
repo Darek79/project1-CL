@@ -227,6 +227,7 @@ main {
 #info_element section:nth-child(2) {
     background-image: url(../images/box2_img.jpg);
 }
+
 #text_sec {
     height: 230px;
     width: 300px;
@@ -237,19 +238,48 @@ main {
     align-items: flex-start;
     justify-content: center;
     padding: 20px;
-} 
+}
+
 #text_sec>p {
     margin: 10px 0;
     position: relative;
-    bottom:10px;
+    bottom: 10px;
 }
-#text_sec p:nth-child(1){
+
+#text_sec p:nth-child(1) {
     font-weight: bold;
-    border-bottom:5px solid #00b386; 
-    
+    border-bottom: 5px solid #00b386;
 }
-#text_sec p:nth-child(2),#text_sec p:nth-child(3){
+
+#text_sec p:nth-child(2),
+#text_sec p:nth-child(3) {
     opacity: 0.7;
-
 }
 
+#prizes {
+    height: 700px;
+    background-color: #e6e6e6;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+
+.prizesMainStyle {
+    width: 300px;
+    height: 500px;
+    margin: 120px 20px 0px 10px;
+    border: 1px solid red;
+    position: relative;
+    display: flex;
+}
+
+.prizesMainStyle:nth-child(1)::before {
+    content: "cennik";
+    text-transform: uppercase;
+    border-bottom: 5px solid #00b386;
+    width: 298px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: -85px;
+}
