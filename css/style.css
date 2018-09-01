@@ -49,10 +49,10 @@ nav {
 nav ul:nth-child(1) {
     margin-left: 40px;
     margin-right: auto;
-    
 }
 
-ul[id^="menu"], nav ul:nth-child(1) {
+ul[id^="menu"],
+nav ul:nth-child(1) {
     width: 110px;
     border: 1px solid red;
     display: flex;
@@ -88,7 +88,7 @@ ul[id^="menu"], nav ul:nth-child(1) {
 /* end NAV panel */
 /* start sub_menuPanel  */
 #sub_menuPanel {
-    color: white;
+    color: #f2f2f2;
     position: absolute;
     border: 2px solid green;
 }
@@ -101,16 +101,15 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 #img1 {
-    background-image: url(../images/black_chair.png);
-    background-size: cover;
-    background-position: center;
     width: 400px;
     height: 350px;
     border: 1px solid red;
+    background-image: url(../images/black_chair.png);
+    background-size: cover;
+    background-position: center;
 }
 
 #arrow_front {
@@ -118,26 +117,26 @@ main {
     height: 40px;
     border-top: 5px solid #00b386;
     border-left: 5px solid #00b386;
-    border-radius:5px;
+    border-radius: 5px;
     position: relative;
     top: -10px;
-    right: 80px;
+    right: 40px;
     transform: translatey(-5px) rotate(-45deg) skew(15deg, 15deg);
     cursor: pointer;
 }
+
 #arrow_end {
     width: 40px;
     height: 40px;
     border-top: 5px solid #00b386;
     border-left: 5px solid #00b386;
-    border-radius:5px;
+    border-radius: 5px;
     position: relative;
     top: -10px;
-    right: -80px;
+    right: -20px;
     transform: translatey(-5px) rotate(135deg) skew(15deg, 15deg);
     cursor: pointer;
 }
-
 
 #mainSec {
     width: 400px;
@@ -148,6 +147,7 @@ main {
     align-items: center;
     justify-content: center;
     border: 1px solid red;
+    margin: 0 40px;
 }
 
 #mainSec article:nth-child(1) {
@@ -175,3 +175,81 @@ main {
     font-size: 1.2rem;
     cursor: pointer;
 }
+
+#info_element {
+    border: 1px solid red;
+    height: 350px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+
+.chair_img {
+    height: 200px;
+    width: 300px;
+    margin: 30px 20px 0px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    display: flex;
+    align-items: flex-end;
+}
+
+.chair_descr {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(242, 242, 242, 0.5);
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#chair_one::before {
+    content: "Chair CLAIR";
+    border-bottom: 5px solid #00b386;
+    position: absolute;
+    left: 20px;
+}
+
+#chair_two::before {
+    content: "Chair MARGARITA";
+    border-bottom: 5px solid #00b386;
+    position: absolute;
+    left: 20px;
+}
+
+#info_element section:nth-child(1) {
+    background-image: url(../images/box1_img.jpg);
+}
+
+#info_element section:nth-child(2) {
+    background-image: url(../images/box2_img.jpg);
+}
+#text_sec {
+    height: 230px;
+    width: 300px;
+    margin: 30px 20px 0px 10px;
+    border: 1px solid blue;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+} 
+#text_sec>p {
+    margin: 10px 0;
+    position: relative;
+    bottom:10px;
+}
+#text_sec p:nth-child(1){
+    font-weight: bold;
+    border-bottom:5px solid #00b386; 
+    
+}
+#text_sec p:nth-child(2),#text_sec p:nth-child(3){
+    opacity: 0.7;
+
+}
+
