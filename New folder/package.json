@@ -1,5 +1,5 @@
 {
-  "name": "darek",
+  "name": "0_Gulp",
   "version": "1.0.0",
   "description": "<img alt=\"Logo\" src=\"http://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
   "main": "index.js",
@@ -12,11 +12,10 @@
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
-    "gulp-jshint": "^2.1.0",
     "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "jshint": "^2.9.6",
-    "jshint-stylish": "^2.2.1"
+    "gulp-sourcemaps": "^2.6.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-include": "^2.3.1"
+  }
 }

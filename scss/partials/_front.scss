@@ -19,6 +19,39 @@ header {
     .nav-start {
       margin-right: auto;
     }
+    .sub_menu1{
+      display: none;
+      padding: 0 1%;
+      line-height: 110%;
+      color: $mWhite;
+      background-color: $mBlack;
+      list-style: none;
+      position: absolute;
+      top: 8%;
+      right:21%;
+
+
+        &::before{
+          content: " ";
+          width: 0;
+          height: 0;
+          position: relative;
+          top:-35px;
+          right: -30px;
+          border-left: 12px solid transparent;
+          border-right: 12px solid transparent;
+          border-bottom: 25px solid $mBlack;
+        }
+        li{
+          padding-bottom: 10px;
+          cursor: pointer;
+        }
+
+    }
+    .show{
+      display: block;
+      
+    }
   }
 }
 
@@ -42,8 +75,7 @@ main {
     #main-img {
       width: 40%;
       height: 100%;
-      background-image: url(../images/black_chair.png);
-      background-size: cover;
+      background-image: url(/images/chair-0.png);
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -118,6 +150,7 @@ main {
         }
       }
     }
+    
 
     #cbox2 {
       @include HW(70%, 32%);
