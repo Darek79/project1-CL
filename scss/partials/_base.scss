@@ -1,0 +1,36 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5vh 55vh 40vh 100vh 100vh;
+    grid-template-areas: "header""main""main-bottom""middle""footer";
+}
+
+body>header {
+    grid-area: header;
+    height: 100%;
+}
+body>main {
+    grid-area: main;
+    height: 100%;
+}
+body>#main-bottom{
+    grid-area: main-bottom;
+    height: 100%;
+}
+body>#main-bottom{
+    grid-area: main-bottom;
+    height: 100%;
+}
+body>#middle{
+    grid-area: middle;
+    height: 100%;
+}
+body>footer{
+    grid-area: footer;
+    height: 100%;
+}

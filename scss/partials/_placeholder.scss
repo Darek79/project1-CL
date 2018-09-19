@@ -1,0 +1,20 @@
+%button{
+    border: none;
+    background-color: $mGreen;
+    text-transform: uppercase;
+    color: $mWhite;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+%bef {
+    &::before {
+        content: 'CENNIK';
+        position: absolute;
+        top: 50px;
+        left: 120px;
+        border-bottom: 5px solid $mGreen;
+        padding-right: 21%;
+        
+    }
+}

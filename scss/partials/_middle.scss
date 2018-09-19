@@ -1,0 +1,180 @@
+#middle {
+    background-color: $mMiddle;
+    @include flex(flex-end, center, column);
+    position: relative;
+
+    #middle-title{
+        @include HW(5%, 80%);
+        color:black;
+        position: relative;
+        top: -70px;
+
+        p{  
+            width: 32%;
+            border-bottom: 5px solid $mGreen;
+        }
+    }
+    
+
+    #middle-box {
+        @include HW(80%, 80%);
+        @include flex(space-between, center, row);
+        margin: 0 auto;
+        position: relative;
+        bottom:5%;
+
+        .box {
+            @include HW(100%, 32%);
+            @include flex(space-between, center, column);
+            padding: 30px 0;
+
+            .middle-circle {
+                @include flex(center, center, column);
+                width: 45%;
+                height: 30%;
+                border-radius: 100%;
+                background-color: $mWhite;
+
+                p {
+                    span {
+                        vertical-align: super;
+                        font-size: 1.2rem;
+                        position: relative;
+                        top: -10px;
+
+                    }
+                }
+
+            }
+
+            .middle-sqr {
+                width: 99.50%;
+                height: 30%;
+                border-top: 2px solid $mWhite;
+                text-align: center;
+                color: $mBoxgr;
+
+                p {
+                    padding: 5px 0;
+                }
+            }
+
+
+
+
+        }
+
+        #pri1 {
+            @include text(2rem, $mGreen);
+            background-color: $prizeC;
+            border: 2px solid $mBoxgr;
+            border-radius: 5px;
+
+
+            .middle-circle {
+                border: 2px solid $mBoxgr;
+                @include text(1.5rem, $mBoxgr);
+
+
+                p:nth-child(1) {
+                    @include text(3rem, $mBoxgr);
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .middle-sqr {
+                p:nth-child(1) {
+                    background-color: #e5e5e5;
+                    color: $listD;
+                }
+
+                p:nth-child(2) {
+                    background-color: $mMiddle;
+                }
+
+            }
+            button{
+                @extend %button;
+                width: 40%;
+            }
+
+        }
+
+        #pri2 {
+            @include text(2rem, $mWhite);
+            background-color: $mGreen;
+            border: 2px solid $mGreen;
+            border-radius: 5px;
+
+            .middle-circle {
+                border: 2px solid $mWhite;
+                @include text(1.5rem, $mBoxgr);
+
+
+                p:nth-child(1) {
+                    @include text(3rem, $mBoxgr);
+                    font-weight: bold;
+                }
+            }
+
+            .middle-sqr {
+                p:nth-child(2n+1) {
+                    background-color: $mWhite;
+                }
+
+                p:nth-child(2) {
+                    background-color: $mMiddle;
+                    color: $listD;
+                }
+            }
+
+            button{
+                @extend %button;
+                background-color: $mWhite;
+                color: $mGreen;
+                width: 40%;
+            }
+            
+
+        }
+
+        #pri3 {
+            @include text(2rem, $mGreen);
+            background-color: $prizeC;
+            border: 2px solid $mBoxgr;
+            border-radius: 5px;
+
+
+
+            .middle-circle {
+                border: 2px solid $mBoxgr;
+                @include text(1.5rem, $mBoxgr);
+
+
+                p:nth-child(1) {
+                    @include text(3rem, $mBoxgr);
+                    font-weight: bold;
+                }
+            }
+
+            .middle-sqr {
+                p:nth-child(2n+1) {
+                    background-color: #e5e5e5;
+                    color: $listD;
+                }
+
+                p:nth-child(2n+0) {
+                    background-color: $mMiddle;
+                }
+            }
+
+            button{
+                @extend %button;
+                width: 40%;
+            }
+
+        }
+    }
+
+}

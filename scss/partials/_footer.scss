@@ -1,0 +1,95 @@
+footer {
+
+    #footer-title {
+        margin: 0 auto;
+        @include HW(5%, 80%);
+        color: black;
+        position: relative;
+        top: 70px;
+        border: 1px solid red;
+
+        p {
+            width: 32%;
+            border-bottom: 5px solid $mGreen;
+        }
+    }
+
+    #footer-middle {
+        margin: 0 auto;
+        @include HW(80%, 80%);
+        @include flex(flex-start, center, row);
+        border: 1px solid red;
+
+        form {
+            border: 1px solid blue;
+            @include HW(70%, 60%);
+            @include flex(space-around, flex-start, column);
+            position: relative;
+            top: 5%;
+
+            input {
+                padding: 10px;
+                width: 100%;
+                font-family: 'Raleway', sans-serif;
+                @include text(3rem, $mBoxgr);
+                border: 2px solid $mBoxgr;
+
+            }
+
+            textarea:nth-child(3) {
+                height: 55%;
+                padding: 10px;
+                width: 100%;
+                font-family: 'Raleway', sans-serif;
+                @include text(3rem, $mBoxgr);
+                border: 2px solid $mBoxgr;
+                resize: none;
+
+            }
+        }
+
+        #input-right{
+            border: 1px solid blue;
+            @include HW(70%, 40%);
+            @include flex(space-around, center, column);
+            position: relative;
+            top: 5%;
+            
+
+            #input-chair{
+                @include HW(50%, 100%);
+                background-image: url(/images/red_chair.png);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            #form{
+                
+                margin: 0 auto;
+                @include HW(10%, 75%);
+                @include flex(space-around, center, row);
+               
+
+                p{
+                    padding-left: 5%;
+                    @include text(1.2rem,$mBoxgr);
+                }
+                img{
+                    border: 2px solid $mBoxgr;
+                    padding: 5px;
+                }
+                
+            }
+            button{
+                @extend %button;
+                margin: 0 auto 7% auto;
+                @include HW(20%, 75%);
+                @include text(2rem, $mWhite);
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+            }
+        }
+
+
+    }
+
+}

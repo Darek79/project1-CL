@@ -1,81 +1,129 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Project-1</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Document</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>sit on chair</li>
-        </ul>
-        <ul id="menu2">
-            <li>O Firmie</li>
-            <ul id="sub_menu1">
-                <li>Aktualności</li>
-                <li>Nasz team</li>
-                <li>Historia</li>
-            </ul>
-        </ul>
-        <ul id="menu3">
-            <li>galeria</li>
-        </ul>
-        <ul id="menu4">
-            <li>kontakt</li>
-        </ul>
-    </nav>
-    <main class="mainWidth">
-        <!-- <img id="img1" src="./images/black_chair.png"> -->
-        <div id="arrow_front"></div>
-        <section id="img1"></section>
-        <section id="mainSec">
-            <article>sit <span style="color:#00b386">on</span> our <span style="color:#00b386">chair</span></article>
-            <article>Nulla commodo neque ut sagittis eleifend. Mauris sed vehicula quam. Nullam quis sem rutrum diam
-                feugiat luctus vitae nec purus. Aenean eget nulla sit amet ligula convallis lobortis.Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </article>
-            <button>zobacz więcej</button>
+    <header>
+        <nav>
+            <a href="#" class="nav-start">sit <span class="on">on</span> chair</a>
+            <a href="#" class="nav">o firmie</a>
+            <a href="#" class="nav">galeria</a>
+            <a href="#" class="nav">kontakt</a>
+        </nav>
+    </header>
+    <main>
+        <section id="main-wrapper">
+            <a href="#" class="arrow aleft"></a>
+            <div id="main-img"></div>
+            <div id="main-txt">
+                <article class="main-title">sit <span style="color:#00b386">on</span> our <span style="color:#00b386">chair</span></article>
+                <article class="main-cont">Nulla commodo neque ut sagittis eleifend. Mauris sed vehicula quam. Nullam
+                    quis sem rutrum
+                    diam
+                    feugiat luctus vitae nec purus. Aenean eget nulla sit amet ligula convallis lobortis.Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </article>
+                <button>zobacz więcej</button>
+            </div>
+            <a href="#" class="arrow aright"></a>
         </section>
-        <div id="arrow_end"></div>
     </main>
-    <section id="info_element" class="mainWidth">
-        <section class="chair_img">
-            <p id="chair_one" class="chair_descr"></p>
-        </section>
-        <section class="chair_img">
-            <p id="chair_two" class="chair_descr"></p>
-        </section>
-        <section id="text_sec">
-            <p>Find all inputs</p>
-            <p>Curabitur placerat orci vitae justo imperdiet semper. Vivamus faucibus felis condimentum accumsan
-                tristique.</p>
-            <p>Quisque non ante neque. Quisque et magna nec urna aliquam ullamcorper et vel quam. Maecenas sed tortor
-                orci.</p>
-        </section>
+    <section id="main-bottom">
+        <div id="bottom-wrapper">
+            <div id="cbox1">
+                <span></span>
+            </div>
+            <div id="cbox2">
+                <span></span>
+            </div>
+            <div id="cbox3">
+                <p id="cbox3-title">Find all inputs</p>
+                <p>Curabitur placerat orci vitae justo imperdiet semper. Vivamus faucibus felis condimentum accumsan
+                    tristique.</p>
+                <p>Quisque non ante neque. Quisque et magna nec urna aliquam ullamcorper et vel quam. Maecenas sed
+                    tortor
+                    orci.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="prizes" class="mainWidth">
-      
-                <div id="test" class="prizesMainStyle"></div>
-                <div class="prizesMainStyle"></div>
-                <div class="prizesMainStyle"></div>
-        
+    <section id="middle">
+        <section id="middle-title">
+            <p>BASIC PLAN</p>
+        </section>
+        <section id="middle-box">
+            <div id="pri1" class="box">
+                <p>BASIC PLAN</p>
+                <div class="middle-circle">
+                    <p>85<span>99</span></p>
+                    <p>PLN/MSC</p>
+                </div>
+                <div class="middle-sqr">
+                    <p>Zakup towaru + dowoz</p>
+                    <p>Serwis</p>
+                </div>
+                <button>dołącz</button>
+            </div>
+            <div id="pri2" class="box">
+                <p>STANDARD PLAN</p>
+                <div class="middle-circle">
+                    <p>95<span>99</span></p>
+                    <p>PLN/MSC</p>
+                </div>
+                <div class="middle-sqr">
+                    <p>Zakup towaru + dowoz</p>
+                    <p>Serwis</p>
+                    <p>Gwarancja 5 lat</p>
+                </div>
+                <button>dołącz</button>
+            </div>
+            <div id="pri3" class="box">
+                <p>ADVANCE PLAN</p>
+                <div class="middle-circle">
+                    <p>211<span>00</span></p>
+                    <p>PLN/MSC</p>
+                </div>
+                <div class="middle-sqr">
+                    <p>Zakup towaru + dowoz</p>
+                    <p>Serwis</p>
+                    <p>Gwarancja 6 lat</p>
+                    <p>Porady projektanta</p>
+                </div>
+                <button>dołącz</button>
+            </div>
+        </section>
     </section>
+    <footer>
+        <section id="footer-title">
+            <p>KONTAKT</p>
+        </section>
+        <section id="footer-middle">
+            <form>
+                <input type="text"  value="Imie">
+                <input type="text"  value="email">
+                <textarea>Wiadomosc</textarea>
+            </form>
+            <section id="input-right">
+                <div id="input-chair"></div>
+                <div id="form">
+                    <img src="/images/form_ok.jpg">
+                    <p>Zgadzam sie na przetwarzanie danych osobowych</p>
+                </div>
+                <button>WYSLIJ</button>
+                </section>
+        </section>
 
+    </footer>
 
-    <script src="" async defer></script>
 </body>
 
 </html>

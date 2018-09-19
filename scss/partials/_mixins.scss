@@ -1,0 +1,15 @@
+@mixin flex($just,$align,$dir) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-direction: $dir;
+}
+@mixin HW($h,$w) {
+    height: $h;
+    width: $w;
+}
+@mixin text($size,$col) {
+    font-size: $size;
+    color: $col;
+}
+
